@@ -1,0 +1,117 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.content {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.taskDisplay {
+  margin-bottom: 40px;
+}
+
+.taskText {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.emptyMessage {
+  margin-bottom: 40px;
+}
+
+.emptyMessage h2 {
+  font-size: 2rem;
+  color: #666;
+  margin: 0 0 10px 0;
+}
+
+.emptyMessage p {
+  font-size: 1.1rem;
+  color: #888;
+  margin: 0;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nextButton {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.nextButton:hover:not(:disabled) {
+  background: #45a049;
+  transform: translateY(-2px);
+}
+
+.nextButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.manageButton {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.manageButton:hover {
+  background: #1976d2;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 30px 20px;
+  }
+
+  .taskText {
+    font-size: 2rem;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nextButton,
+  .manageButton {
+    width: 100%;
+    max-width: 200px;
+  }
+}

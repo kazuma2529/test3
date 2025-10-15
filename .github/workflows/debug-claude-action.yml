@@ -1,0 +1,27 @@
+name: Debug Claude Code Action
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  debug:
+    if: contains(github.event.comment.body, '@claude')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug event
+        run: |
+          echo "Comment body: ${{ github.event.comment.body }}"
+          echo "Event name: ${{ github.event_name }}"
+          echo "Repository: ${{ github.repository }}"
+          echo "Actor: ${{ github.actor }}"
+
+      - name: Check secrets
+        run: |
+          if [ -n "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
+            echo "API key is set (length: ${#ANTHROPIC_API_KEY})"
+          else
+            echo "API key is NOT set"
+          fi
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

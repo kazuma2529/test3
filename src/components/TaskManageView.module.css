@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
   padding: 20px;
 }
 
@@ -44,11 +44,11 @@
 }
 
 .input:focus {
-  border-color: #2196f3;
+  border-color: #dc2626;
 }
 
 .addButton {
-  background: #4caf50;
+  background: #dc2626;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -61,7 +61,7 @@
 }
 
 .addButton:hover:not(:disabled) {
-  background: #45a049;
+  background: #991b1b;
 }
 
 .addButton:disabled {
@@ -104,8 +104,8 @@
 }
 
 .taskItem:hover {
-  border-color: #2196f3;
-  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.1);
+  border-color: #dc2626;
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.1);
 }
 
 .taskContent {
@@ -165,7 +165,7 @@
 
 .editInput {
   padding: 10px;
-  border: 2px solid #2196f3;
+  border: 2px solid #dc2626;
   border-radius: 6px;
   font-size: 1rem;
   outline: none;
@@ -178,7 +178,7 @@
 }
 
 .saveButton {
-  background: #4caf50;
+  background: #dc2626;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -189,7 +189,7 @@
 }
 
 .saveButton:hover:not(:disabled) {
-  background: #45a049;
+  background: #991b1b;
 }
 
 .saveButton:disabled {
@@ -231,7 +231,7 @@
 }
 
 .backButton {
-  background: #2196f3;
+  background: #dc2626;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -244,7 +244,7 @@
 }
 
 .backButton:hover {
-  background: #1976d2;
+  background: #991b1b;
 }
 
 @media (max-width: 600px) {

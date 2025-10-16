@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
   padding: 20px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .nextButton {
-  background: #2e7d32;
+  background: #dc2626;
   color: white;
   border: none;
   padding: 15px 30px;
@@ -67,7 +67,7 @@
 }
 
 .nextButton:hover:not(:disabled) {
-  background: #1b5e20;
+  background: #991b1b;
   transform: translateY(-2px);
 }
 
@@ -78,7 +78,7 @@
 }
 
 .manageButton {
-  background: #2196f3;
+  background: #b91c1c;
   color: white;
   border: none;
   padding: 15px 30px;
@@ -91,7 +91,7 @@
 }
 
 .manageButton:hover {
-  background: #1976d2;
+  background: #7f1d1d;
   transform: translateY(-2px);
 }
 
